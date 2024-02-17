@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad12_9rounded" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TravelTableViewCell" rowHeight="296" id="KGk-i7-Jjw" customClass="TravelTableViewCell" customModule="Travels" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="700" height="400"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="700" height="400"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z1y-G3-CUi" userLabel="Background View">
+                        <rect key="frame" x="10" y="10" width="680" height="380"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Curitiba" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="arA-cv-pTe" userLabel="Title">
+                                <rect key="frame" x="8" y="208" width="89.5" height="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="right" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="a partir de R$399,00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zOf-bZ-H0L" userLabel="Price">
+                                <rect key="frame" x="438" y="208" width="234" height="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Brazil" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VKo-UL-4jG" userLabel="Subtitle">
+                                <rect key="frame" x="8" y="350.5" width="43.5" height="21.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="18"/>
+                                </variation>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bonito-brasil" translatesAutoresizingMaskIntoConstraints="NO" id="qJ6-TN-u23" userLabel="Image">
+                                <rect key="frame" x="0.0" y="0.0" width="680" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="XFo-ZW-4Ro"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="right" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ter. 12 - Sex. 15" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xdm-JZ-OsT" userLabel="Cancel">
+                                <rect key="frame" x="548.5" y="350.5" width="123.5" height="21.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="18"/>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="arA-cv-pTe" firstAttribute="top" secondItem="qJ6-TN-u23" secondAttribute="bottom" constant="8" symbolic="YES" id="DwY-Rg-yQZ"/>
+                            <constraint firstItem="zOf-bZ-H0L" firstAttribute="top" secondItem="qJ6-TN-u23" secondAttribute="bottom" constant="8" symbolic="YES" id="F2U-p5-gDY"/>
+                            <constraint firstAttribute="trailing" secondItem="zOf-bZ-H0L" secondAttribute="trailing" constant="8" id="Lyh-ao-8mF"/>
+                            <constraint firstAttribute="bottom" secondItem="Xdm-JZ-OsT" secondAttribute="bottom" constant="8" id="W9L-wR-Ese"/>
+                            <constraint firstItem="qJ6-TN-u23" firstAttribute="top" secondItem="Z1y-G3-CUi" secondAttribute="top" id="cQc-6H-KZY"/>
+                            <constraint firstItem="qJ6-TN-u23" firstAttribute="leading" secondItem="Z1y-G3-CUi" secondAttribute="leading" id="eXU-CL-sdc"/>
+                            <constraint firstAttribute="bottom" secondItem="VKo-UL-4jG" secondAttribute="bottom" constant="8" id="fNB-Sf-W9G"/>
+                            <constraint firstAttribute="trailing" secondItem="Xdm-JZ-OsT" secondAttribute="trailing" constant="8" id="fnY-YN-CXR"/>
+                            <constraint firstItem="VKo-UL-4jG" firstAttribute="leading" secondItem="Z1y-G3-CUi" secondAttribute="leading" constant="8" id="udl-IJ-wd1"/>
+                            <constraint firstAttribute="trailing" secondItem="qJ6-TN-u23" secondAttribute="trailing" id="wzO-YZ-bKj"/>
+                            <constraint firstItem="arA-cv-pTe" firstAttribute="leading" secondItem="Z1y-G3-CUi" secondAttribute="leading" constant="8" id="xiI-Uf-oSM"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Z1y-G3-CUi" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="6Vr-fR-zNt"/>
+                    <constraint firstAttribute="trailing" secondItem="Z1y-G3-CUi" secondAttribute="trailing" constant="10" id="9dc-kg-WBm"/>
+                    <constraint firstItem="Z1y-G3-CUi" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="ZNq-xc-qQw"/>
+                    <constraint firstAttribute="bottom" secondItem="Z1y-G3-CUi" secondAttribute="bottom" constant="10" id="aHa-Kt-kGh"/>
+                    <constraint firstItem="Z1y-G3-CUi" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="fol-2K-MA9"/>
+                    <constraint firstItem="Z1y-G3-CUi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="xH2-26-ASI"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="backgroundViewCell" destination="Z1y-G3-CUi" id="ce9-qx-xxm"/>
+                <outlet property="cancelLabel" destination="Xdm-JZ-OsT" id="StT-6N-WI5"/>
+                <outlet property="priceLabel" destination="zOf-bZ-H0L" id="w89-Ki-5iC"/>
+                <outlet property="subtitleLabel" destination="VKo-UL-4jG" id="omZ-Bx-G05"/>
+                <outlet property="titleLabel" destination="arA-cv-pTe" id="fgf-zo-zv1"/>
+                <outlet property="travelImageView" destination="qJ6-TN-u23" id="ENR-Bm-3Rl"/>
+            </connections>
+            <point key="canvasLocation" x="-80.916030534351137" y="-16.901408450704228"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="bonito-brasil" width="1280" height="718"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
